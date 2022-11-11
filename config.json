@@ -1,0 +1,19 @@
+{
+  "app": {
+    "service_name": "Comfandi-api",
+    "port": 30021,
+    "allowed_domains": "*",
+    "path_log": "./log",
+    "log_review_interval": 60,
+    "register_log": true,
+    "rsa_private_key": "../rsa/app.rsa",
+    "rsa_public_key": "../rsa/app.rsa.pub",
+    "logger_http": true,
+    "language": "en",
+    "path_xml": "./xml-samples"
+  },
+  "soap_s": {
+    "base_url": "http://127.0.0.1:8080/soapWS"
+  }
+}
+
