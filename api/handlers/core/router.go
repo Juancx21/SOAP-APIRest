@@ -11,4 +11,5 @@ func RouterCore(app *fiber.App, txID string) {
 	v1.Post("/user-by-id", h.GetUserByID)
 	v1.Post("/user-by-email", h.GetUserByEmail)
 	v1.Post("/create-user", h.CreateUser)
+	v1.Post("/delete-user", h.DeleteUser)
 }
