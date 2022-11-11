@@ -1,4 +1,0 @@
-ERROR: 2022/11/11 12:14:13 D:/Projects/Integracion/apirest/api/handlers/core/handler.go:41: No se pudo consultar la persona: %v <nil>
-ERROR: 2022/11/11 12:23:51 D:/Projects/Integracion/apirest/api/handlers/core/handler.go:93: No se pudo consultar la persona: %v <nil>
-ERROR: 2022/11/11 12:25:38 D:/Projects/Integracion/apirest/api/handlers/core/handler.go:93: No se pudo consultar la persona: %v <nil>
-ERROR: 2022/11/11 12:26:00 D:/Projects/Integracion/apirest/internal/ws/consume.go:33: no se  puedo enviar la petición: Post "http://127.0.0.1:8080/soapWS": EOF  -- log: 
