@@ -32,7 +32,6 @@ type RequestDeleteUser struct {
 }
 
 type RequestCreateUser struct {
-	IdUser   string `json:"id"`
 	Name     string `json:"names"`
 	LastName string `json:"lastname"`
 	Email    string `json:"email"`
@@ -123,4 +122,22 @@ type ResponseDeleteUser struct {
 			Message string `xml:"message"`
 		} `xml:"deleteUserResponse"`
 	} `xml:"Body"`
+}
+
+type RequestLogin struct {
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
+
+type ResponseLogin struct {
+	Error bool   `json:"error"`
+	Data  Token  `json:"data"`
+	Msg   string `json:"msg"`
+	Code  int    `json:"code"`
+	Type  string `json:"type"`
+}
+
+type Token struct {
+	AccessToken  string `json:"access_token"`
+	RefreshToken string `json:"refresh_token"`
 }
